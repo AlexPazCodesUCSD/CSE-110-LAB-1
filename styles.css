@@ -1,0 +1,110 @@
+.Section1 {
+  background-color: rgb(245, 240, 230);
+  scroll-margin-top: 34.4px;
+}
+.Section2 {
+  background-image: url("images/bg-orbs-1.jpg");
+  scroll-margin-top: 34.4px;
+}
+h2.Section2 {
+  color: white;
+}
+p.Section2{
+  font-size: 28px;
+  color: white;
+}
+div {
+  width: 100%;
+  display: inline-block;
+}
+li.navbar {
+  float: left;
+  display:inline;
+}
+a {
+  display: block;
+  padding: 8px;
+  float: left;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+ul.navbar {
+  background-color: #918ca0;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  font-size: 28px;
+  text-align:center;
+}
+
+a:hover {
+  color:#182b49;
+  background-color: white;
+}
+
+img.ucsdLogo {
+  max-width: 400px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 25px;
+  font-size:28px;
+  width: auto;
+}
+
+.grid-item {
+  background-color:#182b49;
+  color:white;
+  max-height: 500px;
+  width: 300px;
+  padding: 20px;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-item-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-item-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.grid-item-4 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.sectionImages {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  li.navbar {
+    float: left;
+    display: none;
+  }
+
+  ul.navbar {
+    background-color: #918ca0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    font-size: 28px;
+    text-align:center;
+    display: none;
+  }
+
+  img.ucsdLogo {
+    max-width: 75%;
+    
+  }
+  
+}
