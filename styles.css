@@ -6,12 +6,23 @@
   background-image: url("images/bg-orbs-1.jpg");
   scroll-margin-top: 34.4px;
 }
+
 h2.Section2 {
   color: white;
 }
+
+h2 {
+  font-size:28px;
+}
+
 p.Section2{
   font-size: 28px;
   color: white;
+}
+
+p.Section1{
+  font-size: 28px;
+  color: black;
 }
 div {
   width: 100%;
@@ -19,7 +30,7 @@ div {
 }
 li.navbar {
   float: left;
-  display:inline;
+  display: inline;
 }
 a {
   display: block;
@@ -30,7 +41,7 @@ a {
   text-decoration: none;
 }
 ul.navbar {
-  background-color: #918ca0;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   overflow: hidden;
@@ -39,27 +50,30 @@ ul.navbar {
 }
 
 a:hover {
-  color:#182b49;
-  background-color: white;
+  color:#ffffff;
+  background-color: rgb(25, 17, 59);
 }
 
 img.ucsdLogo {
   max-width: 400px;
+  float:left;
+  padding-right: 100%;
 }
 
 .grid-container {
   display: grid;
-  grid-gap: 25px;
   font-size:28px;
   width: auto;
+  padding:25px;
 }
 
 .grid-item {
   background-color:#182b49;
   color:white;
   max-height: 500px;
-  width: 300px;
-  padding: 20px;
+  overflow: auto;
+  padding:25px;
+  width: 75%;
 }
 
 .grid-item-1 {
@@ -86,25 +100,73 @@ img.ucsdLogo {
   max-width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   li.navbar {
     float: left;
     display: none;
   }
 
   ul.navbar {
-    background-color: #918ca0;
+    background-color: #ffffff;
     position: sticky;
     top: 0;
     overflow: hidden;
     font-size: 28px;
     text-align:center;
-    display: none;
   }
 
   img.ucsdLogo {
     max-width: 75%;
     
   }
+
+  h2 {
+    font-size:24px;
+  }
   
+  p.Section2{
+    font-size: 20px;  
+    color: white;
+  }
+  
+  p.Section1{
+    font-size: 20px;
+    color: black;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 25px;
+    font-size:28px;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid-item-1 {
+    grid-row-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .grid-item-2 {
+    grid-row-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  .grid-item-3 {
+    grid-row-start: 2;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .grid-item-4 {
+    grid-row-start: 2;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
